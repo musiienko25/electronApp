@@ -113,6 +113,7 @@
       class="theme-background-color theme-text-color windowDragHandle"
       tabindex="-1"
     >
+
       <button
         id="menu-button"
         class="navbar-action-button i carbon:overflow-menu-vertical"
@@ -134,6 +135,8 @@
       ></button>
       </div>
       <div id="tabs">
+      <div id="root"></div>
+
         <div id="tab-editor" hidden>
           <input id="tab-editor-input" class="mousetrap" spellcheck="false" />
         </div>
@@ -339,7 +342,10 @@
     </div>
 
     <!-- add scripts in Gruntfile.js -->
+    <script src="https://unpkg.com/react@latest/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
 
+    <script src="dist/react.js"></script>
     <script src="dist/bundle.js"></script>
   </body>
 </html>
